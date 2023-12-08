@@ -1,0 +1,143 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!-- font awesome cdn link  -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+<!-- custom css file link  -->
+        <link rel="stylesheet" href="assest/css/style.css">
+    <title>food item salads&bowls</title>
+</head>
+<body>
+<?php 
+require 'navbar.php';
+?>
+<section class="popular" id="popular">
+
+    <h1 class="heading"> Our Special <span>BURGER</span>  </h1>
+
+    <div class="box-container">
+
+        <div class="box">
+            <form action="" method="POST">
+                <span class="price"> $<?php echo $fetch_product['price']; ?>/- </span>
+                <img src="assest/uploaded_img/<?php echo $fetch_product['image']; ?>" alt="">
+            <h3><?php echo $fetch_product['name']; ?></h3>
+            <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="far fa-star"></i>
+            </div>
+             <input type="hidden" name="product_name" value="<?php echo $fetch_product['name']; ?>">
+            <input type="hidden" name="product_price" value="<?php echo $fetch_product['price']; ?>">
+            <input type="hidden" name="product_image" value="<?php echo $fetch_product['image']; ?>">
+            <input type="submit" class="btn" value="add to cart" name="add_to_cart">
+            </form>
+        </div>
+        <div class="box">
+        <form action="manage_cart.php" method="POST">
+
+            <span class="price"> $125 </span>
+            <img src="assest/images/vbb.jpg" alt="">
+            <h3> Supreme Veggie Salads&Bowls</h3>
+            <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="far fa-star"></i>
+            </div>
+             <button type="submit" name="Add_to_Cart"  class="btn">order now</button>
+            <input type="hidden" name="Item_Name" value="Supreme Veggie Salads&Bowls">
+                        <input type="hidden" name="Price" value="125">
+            </form>
+        </div>
+        <div class="box">
+        <form action="manage_cart.php" method="POST">
+
+            <span class="price"> $180 </span>
+            <img src="assest/images/cb.jpg" alt="">
+            <h3>Healthybyte Special Salads&Bowls</h3>
+            <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="far fa-star"></i>
+            </div>
+             <button type="submit" name="Add_to_Cart"  class="btn">order now</button>
+            <input type="hidden" name="Item_Name" value="Healthybyte Special Salads&Bowls">
+                        <input type="hidden" name="Price" value="180">
+            </form>
+        </div>
+        <div class="box">
+        <form action="manage_cart.php" method="POST">
+
+            <span class="price"> $120 </span>
+            <img src="assest/images/ccbb.jpg" alt="">
+            <h3>Cheese Salads&Bowls</h3>
+            <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="far fa-star"></i>
+            </div>
+             <button type="submit" name="Add_to_Cart"  class="btn">order now</button>
+            <input type="hidden" name="Item_Name" value="Cheese Salads&Bowls">
+                        <input type="hidden" name="Price" value="120">
+            </form>
+        </div>
+        <div class="box">
+        <form action="manage_cart.php" method="POST">
+
+            <span class="price"> $140 </span>
+            <img src="assest/images/ppb.jpeg" alt="">
+            <h3>Panner Salads&Bowls</h3>
+            <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="far fa-star"></i>
+            </div>
+             <button type="submit" name="Add_to_Cart"  class="btn">order now</button>
+            <input type="hidden" name="Item_Name" value="Panner Salads&Bowls">
+                        <input type="hidden" name="Price" value="140">
+            </form>
+        </div>
+        <div class="box">
+        <form action="manage_cart.php" method="POST">
+
+            <span class="price"> $120</span>
+            <img src="assest/images/bb.jpg" alt="">
+            <h3>Peri Peri Salads&Bowls</h3>
+            <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="far fa-star"></i>
+            </div>
+             <button type="submit" name="Add_to_Cart"  class="btn">order now</button>
+            <input type="hidden" name="Item_Name" value="Peri Peri Salads&Bowls">
+                        <input type="hidden" name="Price" value="120">
+            </form>
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<script src="assest/js/script.js"></script>
+</body>
+</html>
